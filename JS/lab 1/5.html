@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie5</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        let s = "";
+        let num = prompt("Введите число строк:");
+        let o = 0;
+        let dog = 0;
+        let cat = 0;
+        while (num > o && num != null) {
+            s = "";
+            for (let i = 0; i <= 6;) {
+                if (dog < 3) {
+                    dog++;
+                    s += "dog ";
+                    i++
+                } else if (cat < 2) {
+                    cat++;
+                    s += "cat "
+                    i++;
+                } else {
+                    cat = 0;
+                    dog = 0;
+                }
+            }
+            console.log(s);
+            o++
+        }
+        
+    </script>
+</body>
+
+</html>
