@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Zadanie 1</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		'use strict';
+		let book1 = {};
+
+		book1.title = "Артефакт";
+		book1.pubYear = "0001";
+		book1.price = "2412314300";
+
+		let book2 = {
+			title: "Книга из будущего",
+			pubYear: "2077",
+			price: "100000"
+		};
+
+		console.log("book1:\n");
+		for (let el in book1)
+			console.log(el + ": " + book1[el]);
+
+		console.log("\n");
+
+		console.log("book2:\n");
+		for (let el in book2)
+			console.log(el + ": " + book2[el]);
+	</script>
+</body>
+
+</html>
