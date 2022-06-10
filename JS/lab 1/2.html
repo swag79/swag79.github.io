@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie2</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let num;
+        num = 11;
+        let remains;
+            num = prompt('Введите целочисленное значение');
+            let num10 = num % 10;
+            let num100 = num % 100;
+            if (num100 > 10 && num100 < 20) {
+              remains = 'ворон';
+            } else {
+              switch (num10) {
+                 case 1:
+                      remains = 'ворона';
+                      break;
+                  case 2:
+                  case 3:
+                  case 4:
+                     remains = 'вороны';
+                     break;
+                  case 5:
+                  case 6:
+                  case 7:
+                  case 8:
+                  case 9:
+                  case 0:
+                    remains = 'ворон';
+                    break;
+                default:
+                    alert("Число ворон не определено");
+                    exit;
+            }
+        }
+        alert(`На ветке сидит ${num} ${remains}`);
+    </script>
+</body>
+
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
