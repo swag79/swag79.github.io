@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 4</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        let n = prompt("Введите n: ");
+        let fl;
+        let num = 2;
+        while (n >= num && n != null) {
+            fl = 0;
+            for (let j = 2; j < num; j++) {
+                if (num % j == 0) fl++;
+            }
+            if (fl == 0) console.log(num);
+            num++;
+        }
+    </script>
+</body>
+
+</html>
