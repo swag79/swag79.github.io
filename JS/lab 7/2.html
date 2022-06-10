@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<title></title>
+<style>
+::placeholder {
+color: blue;
+}
+div {
+color: blue;
+font-size: 24px;
+}
+</style>
+</head>
+<body>
+<div id="text">
+<label for="sss"></label>
+<input type="text" data-placeholder="Пример подсказки"/>
+</div>
+<script>
+'use strict';
+let namee = document.getElementById("text");
+
+let npt = namee.getElementsByTagName("input")[0];
+let lbl = namee.getElementsByTagName("label")[0];
+lbl.style.display = "none";
+
+npt.setAttribute("placeholder", npt.dataset.placeholder);
+lbl.innerHTML = npt.dataset.placeholder;
+
+npt.addEventListener("focus", function() {
+lbl.style.display = "block";
+npt.setAttribute("placeholder", "");
+});
+
+npt.addEventListener("blur", function() {
+lbl.style.display = "none";
+npt.setAttribute("placeholder", npt.dataset.placeholder);
+});
+
+</script>
+</body>
+</html>
