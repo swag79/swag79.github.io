@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zadanie 3</title>
+	<script type="text/javascript">
+		'use strict';
+		function showBook(){
+			console.log("book:\n");
+			console.log("Title: " + this.title + "\n");
+			console.log("Price: " + this.price + "\n");
+		}
+
+		function isEmpty(obj){
+			return !Object.keys(obj).length;
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		'use strict';
+		let book1 = {};
+		console.log("empty Book1 is: " + isEmpty(book1) + "\n");
+		book1 = {
+			title: "Книга",
+			pubYear: "2001",
+			price: "400",
+			show: function(){
+				console.log("book1:\n");
+				console.log("Title: " + this.title + "\n");
+				console.log("Price: " + this.price + "\n");
+			}
+		};
+		console.log("empty Book1 is: " + isEmpty(book1) + "\n");
+
+		let book2 = {};
+
+		console.log("empty Book2 is: " + isEmpty(book2) + "\n");
+
+		book2 = {
+			title: "Тупая книга",
+			pubYear: "2002",
+			price: "2000",
+			show: showBook
+		};
+		console.log("empty Book2 is: " + isEmpty(book2) + "\n");
+	</script>
+</body>
+</html>
