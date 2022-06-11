@@ -116,5 +116,3 @@ return tabl;
 © 2022 GitHub, Inc.
 Terms
 Privacy
-Security
-St
