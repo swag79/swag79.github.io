@@ -113,6 +113,3 @@ for(let i=0;i<=num;i++){
 }
 return tabl;
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
